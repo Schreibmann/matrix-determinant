@@ -1,0 +1,30 @@
+{
+  "name": "square-matrix-determinant-calculator",
+  "author": {
+    "name": "Schreibmann",
+    "email": "Schreibbott@gmail.com",
+    "url": "https://t.me/Schreibmann"
+  },
+  "private": true,
+  "scripts": {
+    "run:dev": "yarn workspace @src/app dev",
+    "build": "yarn workspace @src/app build",
+    "typecheck": "lerna run typecheck",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}"
+  },
+  "devDependencies": {
+    "husky": "^2.4.1",
+    "lerna": "3.15.0",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
+  },
+  "workspaces": [
+    "src/**"
+  ]
+}

@@ -1,0 +1,7 @@
+export const changeElem = '@@src/table/CHANGE_ELEM'
+export const changeRange = '@@src/table/CHANGE_RANGE'
+//export const calculate = '@@src/table/CALCULATE'
+//export const validate = '@@src/table/VALIDATE'
+export const setRandom = '@@src/table/SET_RANDOM'
+export const setMatrix = '@@src/table/SET_MATRIX'
+export const reset = '@@src/table/RESET'
